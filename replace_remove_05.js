@@ -1,32 +1,29 @@
-// Replace
+//Replace
 
-// Create new element
+//create new element
 const newHeading = document.createElement('h2');
 
-// Add ID
-newHeading.id = 'new-head';
+//Add id 
+newHeading.id='new-head';
 
-// New text node
-newHeading.appendChild(document.createTextNode('Task list'));
+//new text node
+newHeading.appendChild(document.createTextNode('task list'));
 
-// Get old heading
+//get old heading
 const oldHeading = document.getElementById('task-title');
 
-// Parent
+//parent 
 const cardAction = document.querySelector('.card-action');
 
-// Replace method
-cardAction.replaceChild(newHeading, oldHeading);
+//replace method
+cardAction.replaceChild(newHeading,oldHeading);
 
-
-
-
-// Remove elements
+//remove elements
 const lis = document.querySelectorAll('li');
 const list = document.querySelector('ul');
 
-// Remove the list item
+//remove the list item 
 lis[0].remove();
 
-// Remove child element
+//remove child element
 list.removeChild(lis[2]);
