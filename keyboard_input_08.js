@@ -1,33 +1,33 @@
 const form = document.querySelector('form');
 const taskInput = document.getElementById('task');
-const heading = document.querySelector('h5')
+const heading = document.querySelector('h5');
 
 
-// form.addEventListener('submit', runEvent);
+// form.addEventListener('submit',runEvent);
 
-// KeyEvents
-// KeyDown
-// taskInput.addEventListener('keydown', runEvent);
+//keyEvents
+//keydown
+// taskInput.addEventListener('keydown',runEvent);
 
-// Keyup
-// taskInput.addEventListener('keyup', runEvent);
+// keyup
+// taskInput.addEventListener('keyup',runEvent);
 
-// Keypress
-// taskInput.addEventListener('keypress', runEvent);
+//keypress
+// taskInput.addEventListener('keypress',runEvent);
 
-// Cut
-// taskInput.addEventListener('cut', runEvent);
+// cut
+// taskInput.addEventListener('cut',runEvent);
 
-// Blur
-// taskInput.addEventListener('blur', runEvent);
+// blur
+// taskInput.addEventListener('blur',runEvent);
 
-// Focus
-taskInput.addEventListener('focus', runEvent);
-
-
+//focus
+taskInput.addEventListener('focus',runEvent);
 
 
-// Eventhandler
+
+
+//Eventhandler
 function runEvent(e){
     console.log(`Event type: ${e.type}`);
 
