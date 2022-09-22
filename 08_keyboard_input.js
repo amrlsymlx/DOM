@@ -13,7 +13,7 @@ const heading = document.querySelector('h5');
 // taskInput.addEventListener('keyup',runEvent);
 
 //keypress
-// taskInput.addEventListener('keypress',runEvent);
+taskInput.addEventListener('keypress',runEvent);
 
 // cut
  //taskInput.addEventListener('cut',runEvent);
@@ -22,7 +22,7 @@ const heading = document.querySelector('h5');
  //taskInput.addEventListener('blur',runEvent);
 
 //focus
-taskInput.addEventListener('focus',runEvent);
+//taskInput.addEventListener('focus',runEvent);
 
 
 
