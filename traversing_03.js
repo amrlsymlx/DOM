@@ -1,63 +1,64 @@
-//traversing the document object mode;
-// how to move around
+//traversing the document object model 
+//how to move around(select )parent and child elements
+
 let val;
 
-const list=document.querySelector('ul.collection');
+const list = document.querySelector('ul.collection');
 const listItem = document.querySelector('li.collection-item:first-child');
 
 val = list;
 val = listItem;
 
-// Get child node
-// provide us a node list of all child
-// text nodes are the line breaks
+//Get child node
+//provide us a node list of all child
+//text nodes are the line breaks
 // in most cases we need element child node
 
 val = list.childNodes;
 val = list.childNodes[0];
 val = list.childNodes[0].nodeType;
 
-// Types of nodes
-// 1 - element
-// 2 - attributes
-// 3 - text node
-// 8 - comment
-// 9 - document itself
-// 10 - doctype
+//Types of nodes
+//  1 - element
+//  2 - attribute
+//  3 - text node
+//  8-  comment
+//  9- document itself
+//  10- doctype
 
-// How to get children element nodes
-// It returns HTML collection so we can treat it like an array
-// Except using loops and methods
-// It should convert to an array to loop through and use methods
-
+// how to get children element nodes
+//it return html collection so we can treat it like an array
+// except using loops and methods
+// it should convert to an array to loop through and use methods
 val = list.children;
 val = list.children[0];
-val = list.children[0].textContent='Hello';
+val = list.children[0].textContent='hello';
 
-// acess to children of children
-
+//how to get access to the children of children
 val = list.children[3].children[0].id='test-link';
 
-// first child
+//first child
 val = list.firstChild;
+val = list.firstElementChild;
+
+//lastchild
+val = list.lastChild;
 val = list.lastElementChild;
 
-// count child
-val=list.childElementCount;
+//count child
+val  = list.childElementCount;
 
-// get parent node
-val = listItem.parentNode;
+//get parent node
+val  =  listItem.parentNode;
 val = listItem.parentElement;
 val = listItem.parentElement.parentElement;
 
-// get next siblings
+//get next sibilings
 val = listItem.nextSibling;
 val = listItem.nextElementSibling;
 
-// get previous siblings
+//get previous sibilings
 val = listItem.previousSibling;
 val = listItem.previousElementSibling;
-
-
 
 console.log(val);
