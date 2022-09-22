@@ -3,7 +3,7 @@ const taskInput = document.getElementById('task');
 const heading = document.querySelector('h5');
 
 
-// form.addEventListener('submit',runEvent);
+ form.addEventListener('submit',runEvent);
 
 //keyEvents
 //keydown
@@ -16,10 +16,10 @@ const heading = document.querySelector('h5');
 // taskInput.addEventListener('keypress',runEvent);
 
 // cut
-// taskInput.addEventListener('cut',runEvent);
+ //taskInput.addEventListener('cut',runEvent);
 
 // blur
-// taskInput.addEventListener('blur',runEvent);
+ //taskInput.addEventListener('blur',runEvent);
 
 //focus
 taskInput.addEventListener('focus',runEvent);
